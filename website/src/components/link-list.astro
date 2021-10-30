@@ -1,0 +1,15 @@
+---
+const { items } = Astro.props;
+
+---
+<div class="link-list">
+    {items.map((item) => {
+
+        return (
+            <div class="link-list-item">
+                <p><a href={item.link}>{item.name}</a></p>
+            </div>
+        )
+
+    })}
+</div>

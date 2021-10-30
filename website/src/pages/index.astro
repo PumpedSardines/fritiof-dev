@@ -1,0 +1,48 @@
+---
+import '../style/main.scss';
+import LinkList from "../components/link-list.astro";
+
+const projects = [
+    {
+        name: "Markanvisning.se",
+        link: "https://markanvisning.se",
+    },
+    {
+        name: "SöderÖgon",
+        link: "https://soderogon.se",
+    },
+];
+
+const contacts = [
+    {
+        name: "GitHub",
+        link: "https://github.com/PumpedSardines",
+    },
+    {
+        name: "LinkedIn",
+        link: "https://www.linkedin.com/in/fritiof-rusck-6133071a2/",
+    },
+];
+
+---
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Welcome to Astro</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;500&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+	<h1>Fritiof Rusck</h1>
+	<h2>CTO | Webdev</h2>
+	<div class="lists">
+		<LinkList items={contacts} />
+		<LinkList items={projects} />
+	</div>
+</body>
+
+</html>

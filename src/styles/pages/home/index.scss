@@ -184,6 +184,12 @@
   }
 }
 
+@media (max-width: 486px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+}
+
 .about-me-link {
   margin-top: 20px;
 }

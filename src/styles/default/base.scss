@@ -6,14 +6,15 @@
   --primary-color: #6d8865;
   --primary-color-hover: #388e3c;
 
-  --secondary-color: #ff5722;
-  --secondary-color-hover: #e64a19;
-
   --primary-color-light: #91a88a;
   --primary-color-dark: #546a4e;
 
   --font-family: "Salsa", sans-serif;
   --font-family-read: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

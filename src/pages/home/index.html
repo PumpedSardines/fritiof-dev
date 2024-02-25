@@ -5,11 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello There!</title>
-    <link rel="stylesheet" href="/styles/base.css" />
-    <link rel="stylesheet" href="/styles/typography.css" />
-    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/default.css" />
     <link rel="stylesheet" href="/styles/home.css" />
-    <link rel="stylesheet" href="/styles/ui.css" />
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,58 +17,15 @@
     />
   </head>
   <body>
-    <!-- <nav class="top-navbar"> -->
-    <!--   <ul> -->
-    <!--     <li><a href="/">Home</a></li> -->
-    <!--     <li><a href="/about">About</a></li> -->
-    <!--     <li><a href="/contact">Contact</a></li> -->
-    <!--   </ul> -->
-    <!-- </nav> -->
-    <div class="hero">
-      <div class="cont">
-        <div id="hero-svg-box">
-          <img src="/assets/wiggle-1.svg" alt="Wiggle" id="svg-top-right" />
-          <img src="/assets/wiggle-2.svg" alt="Wiggle" id="svg-top-left" />
-          <img src="/assets/wiggle-3.svg" alt="Wiggle" id="svg-bottom" />
-        </div>
-        <h1>
-          <span class="flower-cont-start">
-            <img src="/assets/flower.svg" alt="Flower" class="flower" />
-            <img src="/assets/flower.svg" alt="Flower" class="flower" />
-            <img src="/assets/flower.svg" alt="Flower" class="flower" />
-          </span>
-          Hello There!
-          <span class="flower-cont-end">
-            <img src="/assets/flower.svg" alt="Flower" class="flower" />
-            <img src="/assets/flower.svg" alt="Flower" class="flower" />
-            <img src="/assets/flower.svg" alt="Flower" class="flower" />
-          </span>
-        </h1>
-        <p>What a beautiful day to write some code</p>
-        <div class="flex-row hero-buttons">
-          <a href="/about" class="button primary dark" role="button">
-            GitHub
-            <img
-              class="github-icon"
-              src="/assets/github-mark.svg"
-              alt="Github logo"
-            />
-          </a>
-          <a href="#projects" class="button secondary dark" role="button">
-            Projects
-          </a>
-        </div>
-      </div>
-    </div>
+    <%- await include('hero.html'); -%>
     <div class="wrapper dark">
       <div class="cont">
         <h2>A Bit About Myself:</h2>
         <p>
-          Hello, I'm Fritiof, a web developer and a designer from Stockholm
-          Sweden, currently attending KTH university. I'm passionate about
-          everything web as well as walking in the forest and playing the piano.
-          I'm currently working on a few projects, which you can find on my
-          GitHub page.
+          Hello, I'm Fritiof, a web developer based in Stockholm, Sweden,
+          currently pursuing studies at KTH University. My interests lie in web
+          development, nature walks, and playing the piano. You can discover my
+          current projects on my GitHub page.
         </p>
         <p class="about-me-link">
           <a href="/about" class="link primary">Take me to GitHub</a>
@@ -156,9 +110,9 @@
           </div>
         </div>
         <p>
-          This is just a snapshot of all the stuff I've made throughout the
-          years. I hope to be able to make even more cool projects the comming
-          years
+          Just sharing a snapshot of the things I've been up to over the years.
+          Looking ahead, I'm stoked to dive into more awesome projects and see
+          where creativity takes me!
         </p>
       </div>
     </div>

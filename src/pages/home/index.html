@@ -12,114 +12,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barriecito&family=Roboto:wght@400;500;600;900&family=Salsa&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;900&family=Salsa&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <%- await include('hero.html'); -%>
-    <div class="wrapper dark">
-      <div class="cont">
-        <h2>A Bit About Myself:</h2>
-        <p>
-          Hello, I'm Fritiof, a web developer based in Stockholm, Sweden,
-          currently pursuing studies at KTH University. My interests lie in web
-          development, nature walks, and playing the piano. You can discover my
-          current projects on my GitHub page.
-        </p>
-        <p class="about-me-link">
-          <a href="/about" class="link primary">Take me to GitHub</a>
-        </p>
-      </div>
-    </div>
-    <div class="wrapper" id="projects">
-      <div class="cont">
-        <h2>Some Awesome Projects:</h2>
-        <p>Here are a few of the cool projects I've been working on lately</p>
-        <div class="project-grid">
-          <div class="project">
-            <img src="/assets/wordfeud.png" alt="Wordfeud project image" />
-            <h3>Wordfeud</h3>
-            <p class="detail">
-              This is a small wordfeud clone where you can play against your
-              friends online. The frontend is built with React and the backend
-              is built with Node.js.
-            </p>
-            <p>
-              <a
-                target="_blank"
-                href="https://github.com/PumpedSardines/wordfeud"
-                class="link primary"
-                >Check it out on GitHub</a
-              >
-            </p>
-          </div>
-          <div class="project">
-            <img
-              src="/assets/arkivet.png"
-              alt="Arkivet Secondhand project image"
-            />
-            <h3>Arkivet Secondhand</h3>
-            <p class="detail">
-              This is a webshop for a secondhand store in Stockholm. I was
-              responsible for the frontend development. The site is built with
-              Next.js.
-            </p>
-            <p>
-              <a
-                target="_blank"
-                href="https://arkivet.com/"
-                class="link primary"
-              >
-                See it Live
-              </a>
-            </p>
-          </div>
-          <div class="project">
-            <img src="/assets/obayaty.png" alt="Obayaty project image" />
-            <h3>Obayaty</h3>
-            <p class="detail">
-              A webshop selling make up target at men. I built the frontend with
-              Next.js.
-            </p>
-            <p>
-              <a
-                target="_blank"
-                href="https://obayaty.com/se"
-                class="link primary"
-              >
-                See it Live
-              </a>
-            </p>
-          </div>
-          <div class="project">
-            <img src="/assets/ray-tracer.png" alt="Ray Tracer project image" />
-            <h3>Ray Tracer</h3>
-            <p class="detail">
-              A ray tracer built in with rust and MSL. It's capable of rendering
-              3D scenes with reflections and refractions.
-            </p>
-            <p>
-              <a
-                target="_blank"
-                href="https://github.com/PumpedSardines/raytrace"
-                class="link primary"
-                >Check it out on GitHub</a
-              >
-            </p>
-          </div>
-        </div>
-        <p>
-          Just sharing a snapshot of the things I've been up to over the years.
-          Looking ahead, I'm stoked to dive into more awesome projects and see
-          where creativity takes me!
-        </p>
-      </div>
-    </div>
+    <!-- -->
+    <%- await include('about-me.html'); -%>
+    <!-- -->
+    <%- await include('projects.html'); -%>
+
     <footer>
       <p>Website built with Love and Coffee</p>
       <p>
-        <a href="https://github.com/PumpedSardines/fritiof-dev">
+        <a target="_blank" href="https://github.com/PumpedSardines/fritiof-dev">
           View the source code on GitHub
         </a>
       </p>

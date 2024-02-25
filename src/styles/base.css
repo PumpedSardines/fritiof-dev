@@ -1,0 +1,49 @@
+:root {
+  --background-color: #d3cac1;
+  --background-color-dark: #c4b8ab;
+  --text-color: #333;
+
+  --primary-color: #6d8865;
+  --primary-color-hover: #388e3c;
+
+  --secondary-color: #ff5722;
+  --secondary-color-hover: #e64a19;
+
+  --primary-color-light: #91a88a;
+  --primary-color-dark: #546a4e;
+
+  --font-family: "Salsa", sans-serif;
+  --font-family-read: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  overflow-x: hidden;
+
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: var(--primary-color);
+  font-family: var(--font-family);
+}
+
+a:hover {
+  color: var(--primary-color-hover);
+}
+
+a:visited {
+  color: var(--primary-color);
+}
+
+.top-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,45 @@
+/* This wrapps the whole page, to avoid styling the body */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* This is the main container for the content */
+.cont {
+  max-width: 840px;
+  width: 100%;
+  padding: 80px 20px;
+  box-sizing: border-box;
+}
+
+.wrapper.dark {
+  background-color: var(--background-color-dark);
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+footer {
+  border-top: 1px solid var(--background-color-dark);
+  padding: 20px 20px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer p {
+  width: fit-content;
+}
+
+footer p:last-child {
+  text-align: right;
+}

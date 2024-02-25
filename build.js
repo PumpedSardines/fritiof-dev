@@ -11,10 +11,10 @@ const out = path.resolve(__dirname, "dist");
 
 const paths = {
   assets: {
-    "arkivet.png": loaders.file(path.join(root, "assets/arkivet.png")),
-    "obayaty.png": loaders.file(path.join(root, "assets/obayaty.png")),
-    "ray-tracer.png": loaders.file(path.join(root, "assets/ray-tracer.png")),
-    "wordfeud.png": loaders.file(path.join(root, "assets/wordfeud.png")),
+    "arkivet.jpg": loaders.file(path.join(root, "assets/arkivet.jpg")),
+    "obayaty.jpg": loaders.file(path.join(root, "assets/obayaty.jpg")),
+    "ray-tracer.jpg": loaders.file(path.join(root, "assets/ray-tracer.jpg")),
+    "wordfeud.jpg": loaders.file(path.join(root, "assets/wordfeud.jpg")),
     "flower.svg": loaders.file(path.join(root, "assets/flower.svg")),
     "github-mark.svg": loaders.file(path.join(root, "assets/github-mark.svg")),
     "wiggle-1.svg": loaders.file(path.join(root, "assets/wiggle-1.svg")),

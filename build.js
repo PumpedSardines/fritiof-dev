@@ -12,6 +12,7 @@ const out = path.resolve(__dirname, "dist");
 const paths = {
   assets: {
     "arkivet.jpg": loaders.file(path.join(root, "assets/arkivet.jpg")),
+    "favicon.svg": loaders.file(path.join(root, "assets/favicon.svg")),
     "obayaty.jpg": loaders.file(path.join(root, "assets/obayaty.jpg")),
     "ray-tracer.jpg": loaders.file(path.join(root, "assets/ray-tracer.jpg")),
     "wordfeud.jpg": loaders.file(path.join(root, "assets/wordfeud.jpg")),

@@ -223,11 +223,7 @@
 
 @media (max-width: 1300px) {
   .project-grid {
-    width: 100%;
-    left: unset;
-    transform: unset;
-
-    grid-template-columns: repeat(2, 1fr);
+    width: 1000px;
   }
 
   .project img {
@@ -240,6 +236,14 @@
 
   .project p.detail {
     height: unset;
+  }
+}
+
+@media (max-width: 1050px) {
+  .project-grid {
+    width: 100%;
+    left: unset;
+    transform: unset;
   }
 }
 

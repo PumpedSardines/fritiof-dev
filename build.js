@@ -22,6 +22,13 @@ const paths = {
     "wiggle-2.svg": loaders.file(path.join(root, "assets/wiggle-2.svg")),
     "wiggle-3.svg": loaders.file(path.join(root, "assets/wiggle-3.svg")),
   },
+  scripts: {
+    "index.js": async () => {
+      const js = loaders.javascript(path.join(root, "scripts/index.js"));
+
+      return await js();
+    },
+  },
   styles: {
     "default.css": async () => {
       const css = loaders.scss(path.join(root, "styles/default.scss"));

@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "node build.js",
-    "build:watch": "nodemon build.js --watch src --ext scss,html,ejs"
+    "build:watch": "nodemon build.js --watch src --ext scss,html,ejs,js"
   },
   "dependencies": {
     "clean-css": "^5.3.3",

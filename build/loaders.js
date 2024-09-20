@@ -8,4 +8,7 @@ module.exports = {
   scss: (path) => {
     return async () => (await sass.compileAsync(path)).css.toString();
   },
+  javascript: (path) => {
+    return async () => await fs.readFile(path, "utf8");
+  },
 };

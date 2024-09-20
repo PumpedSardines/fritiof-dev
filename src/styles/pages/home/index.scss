@@ -1,3 +1,7 @@
+.disable-transition * {
+  transition: none !important;
+}
+
 .hero {
   height: 100vh;
   min-height: 670px;
@@ -24,6 +28,17 @@
 
 .hero-buttons {
   margin-top: 30px;
+
+  .button {
+    transform: translateY(16px);
+    opacity: 0;
+    transition: 0.5s;
+
+    &.animate {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
 }
 
 .hero h1 {
@@ -33,6 +48,21 @@
   color: var(--primary-color-dark);
   margin-bottom: 1rem;
   margin: 0;
+
+  span:not(.flower-cont) {
+    all: unset;
+
+    transition: 0.5s;
+
+    display: inline-block;
+    transform: translateY(16px);
+    opacity: 0;
+
+    &.animate {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
 }
 
 .hero p {
@@ -41,6 +71,14 @@
   margin-bottom: 2rem;
   margin: 0;
   font-family: var(--font-family);
+  transform: translateY(16px);
+  opacity: 0;
+  transition: 0.5s;
+
+  &.animate {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 .hero .flower-cont-start {
@@ -59,16 +97,32 @@
 
 .hero .flower {
   width: 100px;
+
+  transition: 0.5s;
+
+  display: inline-block;
+  transform: scale(0) rotate(180deg);
+
+  &.animate {
+    transform: scale(1) rotate(0deg);
+  }
 }
 
 .hero .flower:nth-child(2) {
   width: 70px;
-  transform: rotate(30deg);
+
+  &.animate {
+    transform: scale(1) rotate(30deg);
+  }
 }
 
 .hero .flower:nth-child(3) {
   width: 50px;
-  transform: rotate(70deg);
+
+  &.animate {
+    transform: scale(1) rotate(70deg);
+  }
+
   position: absolute;
   top: -10px;
   left: 50%;
@@ -97,7 +151,7 @@
 
 #svg-bottom {
   position: absolute;
-  left: 40%;
+  left: 50%;
   transform: translateX(-50%);
   bottom: 0px;
 }
